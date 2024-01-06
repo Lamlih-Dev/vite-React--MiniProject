@@ -23,7 +23,7 @@ const UserProfileCard = ({ id, photo, name, description, age, hobbies }) => {
                         </div>
                     </motion.div>
                 )}
-                <button className="btn" onClick={() => setIsOpen(!isOpen)} >Show Details</button>
+                <button className="btn" onClick={() => setIsOpen(!isOpen)} >{isOpen ? ("Hide Details") : ("Show Details")}</button>
             </motion.div>
         </div>
     );
